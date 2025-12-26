@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Program</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./images/icon.png" type="image/png">
+</head>
+<body>
+    <header class="navbar">
+        <!-- ÜST BAR -->
+        <div class="top-bar">
+           <a href="./index.html"><img src="images/logo.png" class="logo" alt="Logo" /></a>
+             <div class="hamburger" id="hamburger-btn">
+    &#9776;
+</div>
+
+    
+    <div class="top-right">
+
+        <!-- LOGIN DROPDOWN -->
+        <div class="login-dropdown">
+            <img src="./images/login-avatar.png" class="login-icon" alt="">
+            
+            <a href="login.html" class="login" data-i18n="menu_login">
+               
+                Login
+            </a>
+
+           
+        </div>
+
+
+       
+              <select class="lang lang-desktop" id="lang">
+    <option value="en">🇬🇧 United Kingdom</option>
+    <option value="pt">🇵🇹 Portugal</option>
+</select>
+
+<select class="lang lang-mobile" id="lang">
+    <option value="en">🇬🇧</option>
+    <option value="pt">🇵🇹</option>
+</select>
+
+
+
+    </div>
+</div>
+
+        </div>
+
+        <!-- ALT NAV BAR -->
+        <nav class="menu">
+            <a href="index.html" data-i18n="menu_home"></a>
+<a href="conference.html" data-i18n="menu_conf"></a>
+<a href="program.html" data-i18n="menu_prog" class="active"></a>
+<a href="submission.html" data-i18n="menu_submission"></a>
+<a href="registration.html" data-i18n="menu_registration"></a>
+           
+        </nav>
+    </header>
+
+      <div class="page-title">
+    <div data-i18n="footer_program"></div>
+    
+    <div class="talkwithus" data-i18n="page_subtitle_program"></div>
+</div>
+
+<!-- TOPICS SECTION -->
+<section class="themes-section">
+    <div class="themes">
+
+        <h3 data-i18n="topics_title" style="color: #006A31; font-weight: 600; font-size: 1.75rem;"></h3>
+
+        <p data-i18n="topics_intro" style="font-size: 20px;"></p>
+
+        <p><br></p>
+
+        <!-- Main Topics List -->
+        <div data-i18n="topics_list"></div>
+    </div>
+
+    <div class="themes" style="padding: 40px 8px 30px;">
+        <div class="topics-cards" style="margin: 0;">
+
+            <!-- I -->
+            <article class="themes-card">
+                <h4 class="themes-card-title" data-i18n="subforum1_title"></h4>
+                <div data-i18n="subforum1_items"></div>
+            </article>
+
+            <!-- II -->
+            <article class="themes-card">
+                <h4 class="themes-card-title" data-i18n="subforum2_title"></h4>
+                <div data-i18n="subforum2_items"></div>
+            </article>
+
+            <!-- III -->
+            <article class="themes-card">
+                <h4 class="themes-card-title" data-i18n="subforum3_title"></h4>
+                <div data-i18n="subforum3_items"></div>
+            </article>
+
+            <!-- IV -->
+            <article class="themes-card">
+                <h4 class="themes-card-title" data-i18n="subforum4_title"></h4>
+                <div data-i18n="subforum4_items"></div>
+            </article>
+
+            <!-- V -->
+            <article class="themes-card">
+                <h4 class="themes-card-title" data-i18n="subforum5_title"></h4>
+                <div data-i18n="subforum5_items"></div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Program SECTION -->
+<section class="program">
+
+    <h3 data-i18n="program_title" class="program-title">PROGRAM</h3>
+
+    <p data-i18n="program_intro" class="program-intro"></p>
+
+    <table class="program-table">
+        <tbody>
+
+            <!-- Day 1 -->
+            <tr class="firstRow">
+                <td class="day-header" align="center">
+                    <p><strong data-i18n="day1_title"></strong></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day-item" align="center">
+                    <p><strong data-i18n="day1_item1"></strong></p>
+                </td>
+            </tr>
+
+            <!-- Day 2 -->
+            <tr class="firstRow">
+                <td class="day-header" align="center">
+                    <p><strong data-i18n="day2_title"></strong></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day-item" align="center">
+                    <div data-i18n="day2_list"></div>
+                </td>
+            </tr>
+
+            <!-- Day 3 -->
+            <tr class="firstRow">
+                <td class="day-header" align="center">
+                    <p><strong data-i18n="day3_title"></strong></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day-item" align="center">
+                    <p><strong data-i18n="day3_item1"></strong></p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <p data-i18n="program_note" class="program-note"></p>
+
+    <!-- Instructions Box -->
+    <div class="instructions-box">
+
+        <p class="instruction-title"><strong data-i18n="oral_title"></strong></p>
+        <div data-i18n="oral_list" class="instruction-list"></div>
+
+        <br>
+
+        <p class="instruction-title"><strong data-i18n="poster_title"></strong></p>
+        <div data-i18n="poster_list" class="instruction-list"></div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span>©2026</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="./index.html" data-i18n="footer_home">HOME</a>
+            <a href="./conference.html" data-i18n="footer_conference">CONFERENCE</a>
+            <a href="./program.html" data-i18n="footer_program" class="active" >PROGRAM</a>
+            <a href="./submission.html" data-i18n="footer_submission">PAPER SUBMISSION</a>
+            <a href="./registration.html" data-i18n="footer_registration">REGISTRATION</a>
+            <a href="./login.html" data-i18n="footer_login">LOGIN</a>
+        </nav>
+    </div>
+    <div class="footer-icons-wrapper">
+        <div class="footer-icons">
+            <a href="tel:+8613902493194" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="mailto:icaiita@163.com" target="_blank" textvalue="icaiita@163.com"><i class="fas fa-envelope"></i></a>
+            <a href="./registration.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <p style="text-align: center; font-size: 12px;" data-i18n="footer_text">
+            2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA 2026)
+            &nbsp;&nbsp; http://www.aiita.net/
+        </p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

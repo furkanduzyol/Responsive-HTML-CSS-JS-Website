@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Submission</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./images/icon.png" type="image/png">
+</head>
+<body>
+    <header class="navbar">
+        <!-- ÜST BAR -->
+        <div class="top-bar">
+            <a href="./index.html"><img src="images/logo.png" class="logo" alt="Logo" /></a>
+ <div class="hamburger" id="hamburger-btn">
+    &#9776;
+</div>
+
+              
+    <div class="top-right">
+
+        <!-- LOGIN DROPDOWN -->
+        <div class="login-dropdown">
+            <img src="./images/login-avatar.png" class="login-icon" alt="">
+            <!-- LOGIN (default - because no PHP) -->
+            <a href="login.html" class="login" data-i18n="menu_login">
+               
+                Login
+            </a>
+
+           
+        </div>
+
+
+              <select class="lang lang-desktop" id="lang">
+    <option value="en">🇬🇧 United Kingdom</option>
+    <option value="pt">🇵🇹 Portugal</option>
+</select>
+
+<select class="lang lang-mobile" id="lang">
+    <option value="en">🇬🇧</option>
+    <option value="pt">🇵🇹</option>
+</select>
+
+
+    </div>
+</div>
+
+        </div>
+
+        <!-- ALT NAV BAR -->
+        <nav class="menu">
+            <a href="index.html" data-i18n="menu_home"></a>
+<a href="conference.html" data-i18n="menu_conf"></a>
+<a href="program.html" data-i18n="menu_prog"></a>
+<a href="submission.html" data-i18n="menu_submission" class="active"></a>
+<a href="registration.html" data-i18n="menu_registration"></a>
+           
+        </nav>
+    </header>
+
+    <div class="page-title" data-i18n="footer_submission">
+    
+</div>
+
+<!-- Info SECTION -->
+<section class="submission-container" style="margin-bottom: 80px;">
+
+    <div class="submission">
+
+        <h1 class="submission-title" data-i18n="submission_title">Submission Information</h1>
+
+        <!-- Important Dates -->
+        <div class="submission-section">
+            <h3 class="section-title" data-i18n="important_dates_title">Important Dates</h3>
+            <ul class="section-list" data-i18n="important_dates_list"></ul>
+        </div>
+
+        <!-- Submission Procedures -->
+        <div class="submission-section submission-gray">
+            <h3 class="section-title" data-i18n="submission_procedures_title">Submission Procedures</h3>
+            <ul class="section-list" data-i18n="submission_procedures_list"></ul>
+            <p><a href="https://paper-sub.com/login?url=/paper/BEZUBY" target="_blank" data-i18n="submission_system_en">Submission System (English)</a></p>
+            <p><a href="https://www.ais.cn/attendees/paperSubmit/BEZUBY" target="_blank" data-i18n="submission_system_cn">Submission System (Chinese)</a></p>
+        </div>
+
+        <!-- Templates -->
+        <div class="submission-section">
+            <h3 class="section-title" data-i18n="templates_title">Templates for Paper Submission</h3>
+            <ul class="section-list" data-i18n="templates_list"></ul>
+            <p><a href="https://www.aiita.net/download" target="_blank" data-i18n="templates_download">Templates Download</a></p>
+        </div>
+
+        <!-- Basic Rules -->
+        <div class="submission-section submission-gray">
+            <h3 class="section-title" data-i18n="rules_title">Basic Rules</h3>
+            <ul class="section-list" data-i18n="rules_list"></ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Form Section -->
+<section class="question-section">
+  <div class="submission-container">
+
+    <!--Title -->
+    <div class="title-box">
+      <h2>QUESTIONS? WRITE US A MESSAGE</h2>
+      <p>Talk with us</p>
+    </div>
+
+    <!-- Form -->
+    <form id="contactForm" class="question-form" 
+          action="https://formsubmit.co/duzyol975337@gmail.com" 
+          method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Contact Message">
+        <input type="hidden" name="_next" value="thankyou.html"> 
+
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name*" required>
+          <input type="email" name="email" placeholder="Email*" required>
+        </div>
+
+        <div class="form-row">
+          <select name="gender" required class="form-control-select">
+              <option value="" disabled selected>Gender*</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Other">Other</option>
+              <option value="Prefer not">Prefer not to say</option>
+          </select>
+
+          <input type="tel" name="phone" placeholder="Phone*" required>
+        </div>
+
+        <div class="form-row">
+          <input type="text" name="id_card" placeholder="ID Card Number*" required>
+          <input type="text" name="address" placeholder="Address">
+        </div>
+
+        <div class="form-row">
+          <select name="topic" id="topic" required class="form-control-select">
+              <option value="" disabled selected>Select Topic*</option>
+              <option value="Paper Submission">Paper Submission</option>
+              <option value="Registration">Registration</option>
+              <option value="Membership">Membership</option>
+              <option value="Other">Other Questions</option>
+          </select>
+
+          <input type="text" name="other_topic" id="otherInput" placeholder="Please specify" style="display:none;">
+        </div>
+
+        <textarea name="message" placeholder="Message*" rows="7" required></textarea>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="confirm" required>
+          <label for="confirm">I confirm that I've read and accept the Legal note and Privacy policy</label>
+        </div>
+
+        <button type="submit" class="submit-btn">SEND</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span>©2026</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="./index.html" data-i18n="footer_home">HOME</a>
+            <a href="./conference.html" data-i18n="footer_conference">CONFERENCE</a>
+            <a href="./program.html" data-i18n="footer_program">PROGRAM</a>
+            <a href="./submission.html" data-i18n="footer_submission" class="active">PAPER SUBMISSION</a>
+            <a href="./registration.html" data-i18n="footer_registration">REGISTRATION</a>
+            <a href="./login.html" data-i18n="footer_login">LOGIN</a>
+        </nav>
+    </div>
+    <div class="footer-icons-wrapper">
+        <div class="footer-icons">
+            <a href="tel:+8613902493194" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="mailto:icaiita@163.com" target="_blank" textvalue="icaiita@163.com"><i class="fas fa-envelope"></i></a>
+            <a href="./registration.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <p style="text-align: center; font-size: 12px;" data-i18n="footer_text">
+            2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA 2026)
+            &nbsp;&nbsp; http://www.aiita.net/
+        </p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

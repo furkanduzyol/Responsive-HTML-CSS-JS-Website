@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+
+</head>
+
+<body>
+
+<header class="navbar"> 
+    <div class="top-bar"> 
+        
+        <a href="./index.html"> 
+            <img src="images/logo.png" class="logo" alt="Logo" /> 
+        </a>
+
+        <div class="hamburger" id="hamburger-btn">
+            &#9776;
+        </div>
+
+        <div class="top-right"> 
+
+            <div class="login-dropdown"> 
+                <img src="./images/login-avatar.png" class="login-icon" alt=""> 
+
+                <a href="login.html" class="login" data-i18n="menu_login"> 
+                    Login
+                </a>
+            </div>
+
+              <select class="lang lang-desktop" id="lang">
+    <option value="en">🇬🇧 United Kingdom</option>
+    <option value="pt">🇵🇹 Portugal</option>
+</select>
+
+<select class="lang lang-mobile" id="lang">
+    <option value="en">🇬🇧</option>
+    <option value="pt">🇵🇹</option>
+</select>
+
+
+        </div>
+
+    </div> 
+
+
+    <nav class="menu"> 
+        <a href="index.html" data-i18n="menu_home" class="active"></a>
+        <a href="conference.html" data-i18n="menu_conf"></a>
+        <a href="program.html" data-i18n="menu_prog"></a>
+        <a href="submission.html" data-i18n="menu_submission"></a>
+        <a href="registration.html" data-i18n="menu_registration"></a>
+    </nav>
+
+</header> 
+
+
+<!-- HERO SLIDER -->
+<section class="hero-slider">
+    <div class="slider-container">
+        <div class="slide"><img src="images/home1.jpg"></div>
+        <div class="slide"><img src="images/home2.jpg"></div>
+        <div class="slide"><img src="images/home1.jpg"></div>
+    </div>
+</section>
+
+<section id="welcome-section">
+    <h1 data-i18n="welcome_title">Welcome to <span class="blue-text">AIITA 2026</span></h1>
+    <p data-i18n="welcome_subtitle" class="subtitle">
+        2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications
+    </p>
+
+    <h2 class="countdown-title" data-i18n="countdown">Countdown to the meeting:</h2>
+
+    <div class="countdown-container">
+        <div class="countdown-item">
+            <div class="circle">
+                <span id="days">000</span>
+            </div>
+            <p class="label" data-i18n="days">DAYS</p>
+        </div>
+
+        <div class="countdown-item">
+            <div class="circle">
+                <span id="hours">00</span>
+            </div>
+            <p class="label" data-i18n="hours">HOURS</p>
+        </div>
+
+        <div class="countdown-item">
+            <div class="circle">
+                <span id="minutes">00</span>
+            </div>
+            <p class="label" data-i18n="minutes">MINUTES</p>
+        </div>
+
+        <div class="countdown-item">
+            <div class="circle">
+                <span id="seconds">00</span>
+            </div>
+            <p class="label" data-i18n="seconds">SECONDS</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- TOPICS SECTION -->
+<section class="topics-section">
+    <div class="barra"></div>
+    <h2 class="topics-title" data-i18n="topics_title">TOPICS</h2>
+    
+    <p class="topics-subtitle" data-i18n="topics_subtitle">The topics of interest for submission include, but are not limited to:</p>
+
+    <div class="topics-cards">
+
+        <article class="topic-card">
+            <h3 class="topic-card-title" data-i18n="topic_smart_manufacturing">Smart Manufacturing & Automated Production</h3>
+            <img src="images/topics/topic1.jpg" alt="">
+        </article>
+
+        <article class="topic-card">
+            <h3 class="topic-card-title " data-i18n="topic_ai_analytics">Artificial Intelligence & Industrial Data Analytics</h3>
+            <img src="images/topics/topic2.jpg" alt="">
+        </article>
+
+        <article class="topic-card">
+            <h3 class="topic-card-title" data-i18n="topic_intelligent_optimization">Industrial Internet of Things and Data Analytics</h3>
+            <img src="images/topics/topic3.jpg" alt="">
+        </article>
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span>©2026</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="./index.html" class="active" data-i18n="footer_home">HOME</a>
+            <a href="./conference.html" data-i18n="footer_conference">CONFERENCE</a>
+            <a href="./program.html" data-i18n="footer_program">PROGRAM</a>
+            <a href="./submission.html" data-i18n="footer_submission">PAPER SUBMISSION</a>
+            <a href="./registration.html" data-i18n="footer_registration">REGISTRATION</a>
+            <a href="./login.html" data-i18n="footer_login">LOGIN</a>
+        </nav>
+    </div>
+    <div class="footer-icons-wrapper">
+        <div class="footer-icons">
+            <a href="tel:+8613902493194" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="mailto:icaiita@163.com" target="_blank" textvalue="icaiita@163.com"><i class="fas fa-envelope"></i></a>
+            <a href="./registration.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <p style="text-align: center; font-size: 12px;" data-i18n="footer_text">
+            2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA 2026)
+            &nbsp;&nbsp; http://www.aiita.net/
+        </p>
+    </div>
+</footer>
+
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

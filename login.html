@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+</head>
+<body>
+
+<header class="navbar">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="./index.html"><img src="images/logo.png" class="logo" alt="Logo" /></a>
+
+         <div class="hamburger" id="hamburger-btn">
+    &#9776;
+</div>
+
+            
+    <div class="top-right">
+
+        <!-- LOGIN DROPDOWN -->
+        <div class="login-dropdown">
+            <img src="./images/login-avatar.png" class="login-icon" alt="">
+            
+            <a href="login.html" class="login" data-i18n="menu_login">
+               
+                Login
+            </a>
+
+           
+        </div>
+
+
+      
+              <select class="lang lang-desktop" id="lang">
+    <option value="en">🇬🇧 United Kingdom</option>
+    <option value="pt">🇵🇹 Portugal</option>
+</select>
+
+<select class="lang lang-mobile" id="lang">
+    <option value="en">🇬🇧</option>
+    <option value="pt">🇵🇹</option>
+</select>
+
+
+
+    </div>
+</div>
+
+    </div>
+
+    
+     <nav class="menu">
+            <a href="index.html" data-i18n="menu_home"></a>
+<a href="conference.html" data-i18n="menu_conf"></a>
+<a href="program.html" data-i18n="menu_prog"></a>
+<a href="submission.html" data-i18n="menu_submission"></a>
+<a href="registration.html" data-i18n="menu_registration"></a>
+           
+        </nav>
+    </header>
+
+    <div class="page-title" data-i18n="footer_login">
+    LOGIN
+</div>
+
+
+
+
+<div class="login-container">
+    <form action="login.html" method="post">
+
+        <div class="login-form-group">
+            <input type="email" name="email" placeholder="Email:" data-i18n="email">
+        </div>
+
+        <div class="login-form-group">
+            <input type="password" name="password" placeholder="Password:" data-i18n="password">
+        </div>
+
+        <div class="login-form-group">
+            <input type="submit" value="Login" name="submit" data-i18n="loginBtn">
+        </div>
+
+        <p class="already-account" data-i18n="noAccount"></p>
+
+    </form>
+</div>
+
+
+
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span>©2026</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="./index.html" data-i18n="footer_home">HOME</a>
+            <a href="./conference.html" data-i18n="footer_conference">CONFERENCE</a>
+            <a href="./program.html" data-i18n="footer_program">PROGRAM</a>
+            <a href="./submission.html" data-i18n="footer_submission">PAPER SUBMISSION</a>
+            <a href="./registration.html" data-i18n="footer_registration">REGISTRATION</a>
+            <a href="./login.html" data-i18n="footer_login" class="active" >LOGIN</a>
+        </nav>
+    </div>
+    <div class="footer-icons-wrapper">
+        <div class="footer-icons">
+            <a href="tel:+8613902493194" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="mailto:icaiita@163.com" target="_blank" textvalue="icaiita@163.com"><i class="fas fa-envelope"></i></a>
+            <a href="./registration.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <p style="text-align: center; font-size: 12px;" data-i18n="footer_text">
+            2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA 2026)
+            &nbsp;&nbsp; http://www.aiita.net/
+        </p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>

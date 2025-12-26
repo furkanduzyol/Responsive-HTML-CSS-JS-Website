@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./images/icon.png" type="image/png">
+</head>
+<body>
+    <header class="navbar">
+        <!-- ÜST BAR -->
+        <div class="top-bar">
+            <a href="./index.html"><img src="images/logo.png" class="logo" alt="Logo" /></a>
+ <div class="hamburger" id="hamburger-btn">
+    &#9776;
+</div>
+    
+    <div class="top-right">
+
+        <!-- LOGIN DROPDOWN -->
+        <div class="login-dropdown">
+            <img src="./images/login-avatar.png" class="login-icon" alt="">
+            
+            <a href="login.html" class="login" data-i18n="menu_login">
+               
+                Login
+            </a>
+
+           
+        </div>
+
+
+              <select class="lang lang-desktop" id="lang">
+    <option value="en">🇬🇧 United Kingdom</option>
+    <option value="pt">🇵🇹 Portugal</option>
+</select>
+
+<select class="lang lang-mobile" id="lang">
+    <option value="en">🇬🇧</option>
+    <option value="pt">🇵🇹</option>
+</select>
+
+
+
+    </div>
+</div>
+
+        </div>
+
+        <!-- ALT NAV BAR -->
+        <nav class="menu">
+            <a href="index.html" data-i18n="menu_home"></a>
+<a href="conference.html" data-i18n="menu_conf"></a>
+<a href="program.html" data-i18n="menu_prog"></a>
+<a href="submission.html" data-i18n="menu_submission"></a>
+<a href="registration.html" data-i18n="menu_registration" class="active"></a>
+           
+        </nav>
+    </header>
+
+    <div class="page-title" data-i18n="footer_registration">
+    
+</div>
+
+
+<section id="aiita-registration" class="aiita-container">
+
+    <!-- TITLE -->
+    <h2 class="aiita-main-title" data-i18n="reg_title">AIITA 2026 — Registration</h2>
+
+    <!-- SLIDESHOW TITLE -->
+    <div class="aiita-slideshow-title" data-i18n="slideshow_title">Highlights from AIITA 2025</div>
+
+    <!-- SLIDESHOW -->
+    <div class="aiita-slideshow">
+        <button class="aiita-arrow left" onclick="prevAIITASlide()">&#10094;</button>
+
+        <div class="aiita-slides" id="aiita-slides">
+            <img src="images/pics/pic1.jpg" />
+            <img src="images/pics/pic2.png" />
+            <img src="images/pics/pic3.png" />
+            <img src="images/pics/pic4.png" />
+            <img src="images/pics/pic5.png" />
+            <img src="images/pics/pic6.png" />
+            <img src="images/pics/pic7.png" />
+            <img src="images/pics/pic8.png" />
+            <img src="images/pics/pic9.png" />
+            <img src="images/pics/pic10.png" />
+            <img src="images/pics/pic11.png" />
+            <img src="images/pics/pic12.png" />
+            <img src="images/pics/pic13.png" />
+            <img src="images/pics/pic14.png" />
+            <img src="images/pics/pic15.png" />
+            <img src="images/pics/pic16.png" />
+            <img src="images/pics/pic17.png" />
+        </div>
+
+        <button class="aiita-arrow right" onclick="nextAIITASlide()">&#10095;</button>
+    </div>
+
+    <!-- ================= REGISTRATION FEES ================= -->
+    <div class="aiita-fees">
+        <h3 data-i18n="fees_title">Registration Fees</h3>
+
+        <table class="aiita-table">
+            <thead>
+                <tr>
+                    <th data-i18n="item">Item</th>
+                    <th data-i18n="usd">USD</th>
+                    <th data-i18n="cny">CNY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-i18n="fee1">Regular Registration for Paper (4 pages)</td>
+                    <td>545 USD</td>
+                    <td>3800 CNY</td>
+                </tr>
+                <tr>
+                    <td data-i18n="fee2">Extra Pages (from page 5)</td>
+                    <td>55 USD</td>
+                    <td>400 CNY</td>
+                </tr>
+                <tr>
+                    <td data-i18n="fee3">Attendee Without Submission</td>
+                    <td>255 USD</td>
+                    <td>1800 CNY</td>
+                </tr>
+                <tr>
+                    <td data-i18n="fee4">Attendee Without Submission (Group ≥ 3)</td>
+                    <td>215 USD</td>
+                    <td>1500 CNY</td>
+                </tr>
+                <tr>
+                    <td data-i18n="fee5">Extra Proceedings / Journal Copies</td>
+                    <td>70 USD</td>
+                    <td>500 CNY</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ================= REGISTRATION OPTIONS ================= -->
+    <div class="aiita-options">
+        <h3 data-i18n="options_title">Registration Options</h3>
+
+        <p data-i18n="options_subtitle"><br>Choose how you want to join AIITA 2026: </p>
+
+        <a href="https://www.ais.cn/attendees/index/BEZUBY" data-i18n="reg_cn"><br>Registration (Chinese)</a>
+        <a href="https://paper-sub.com/login?url=/register/BEZUBY" data-i18n="reg_en">Registration (English)</a>
+    </div>
+
+    <!-- ================= REGISTRATION DETAILS ================= -->
+    <div class="aiita-details">
+        <h3 data-i18n="details_title" style="text-align: center;">Registration Procedures</h3>
+
+        <ul>
+            <li data-i18n="proc1">Registration includes conference proceedings, lunches, souvenirs, and access to all technical sessions.</li>
+            <li data-i18n="proc2">Registration does NOT include accommodation, visa fees, or transportation.</li>
+            <li data-i18n="proc3">At least one author of each accepted paper must complete registration.</li>
+            <li data-i18n="proc4">The Organizing Committee will confirm registration within 2–5 working days after payment.</li>
+            <li data-i18n="proc5">If you cannot attend, printed proceedings will be shipped to you.</li>
+        </ul>
+    </div>
+
+    <!-- ================= LOCATION / FACILITIES ================= -->
+    <div class="aiita-location">
+        <h3 data-i18n="location_title" style="text-align: center;">Location & Facilities</h3>
+
+        <p data-i18n="venue_text">
+            <strong>Venue:</strong> Will be announced soon — located in a modern conference center with full facilities, Wi-Fi, catering service, and easy transportation access.
+        </p>
+
+        <h4 data-i18n="transport_title">Transportation</h4>
+
+        <ul>
+            <li data-i18n="airport">Nearest Airport: To be announced</li>
+            <li data-i18n="metro">Local metro & bus lines available near the venue</li>
+            <li data-i18n="taxi">Taxi and rideshare services easily accessible</li>
+        </ul>
+
+        <h4 data-i18n="contact_title">Contact</h4>
+        <p><span data-i18n="email">Email:</span> <a href="mailto:icaiita@163.com">icaiita@163.com</a></p>
+    </div>
+
+    <!-- ================= REFUND POLICY ================= -->
+    <div class="aiita-refund">
+        <h3 data-i18n="refund_title">Refund Policy</h3>
+        <ul>
+            <li data-i18n="ref1">60 days before event → 70% refund</li>
+            <li data-i18n="ref2">30–60 days → 50% refund</li>
+            <li data-i18n="ref3">Within 30 days → 30% refund</li>
+            <li data-i18n="ref4">After the conference → No refund</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span>©2026</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="./index.html" data-i18n="footer_home">HOME</a>
+            <a href="./conference.html" data-i18n="footer_conference">CONFERENCE</a>
+            <a href="./program.html" data-i18n="footer_program">PROGRAM</a>
+            <a href="./submission.html" data-i18n="footer_submission">PAPER SUBMISSION</a>
+            <a href="./registration.html" data-i18n="footer_registration" class="active">REGISTRATION</a>
+            <a href="./login.html" data-i18n="footer_login">LOGIN</a>
+        </nav>
+    </div>
+    <div class="footer-icons-wrapper">
+        <div class="footer-icons">
+            <a href="tel:+8613902493194" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="mailto:icaiita@163.com" target="_blank" textvalue="icaiita@163.com"><i class="fas fa-envelope"></i></a>
+            <a href="./registration.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <p style="text-align: center; font-size: 12px;" data-i18n="footer_text">
+            2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA 2026)
+            &nbsp;&nbsp; http://www.aiita.net/
+        </p>
+    </div>
+</footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
